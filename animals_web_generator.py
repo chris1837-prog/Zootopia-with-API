@@ -43,11 +43,11 @@ def serialize_animal(animal_obj):
   output = "" # define an empty string
   output += '<li class="cards__item">'
   output += f'<div class="card__title"> {animal_obj['name']}</div><br/>'
-  output += f'<p class="card__text"> <strong> Diet: </strong> {animal_obj['characteristics']['diet']}</p>'
-  output += f'<p class="card__text"> <strong> Location: </strong>{animal_obj['locations'][0] if animal_obj['locations'] else ' '}</p>'
+  output += f'<p class="card__text"> <strong> Diet: </strong> {animal_obj['characteristics']['diet']}<br/></p>'
+  output += f'<p class="card__text"> <strong> Location: </strong>{animal_obj['locations'][0] if animal_obj['locations'] else ' '}<br/></p>'
 
   if "type" in animal_obj["characteristics"]:
-    output += f'<p class="card__text"> <strong> Type: </strong> {animal_obj['characteristics']['type'] if 'type' in animal_obj['characteristics'] else ''}</p>'
+    output += f'<p class="card__text"> <strong> Type: </strong> {animal_obj['characteristics']['type'] if 'type' in animal_obj['characteristics'] else ''}<br/></p>'
   output += '</li>'
   return output
 
