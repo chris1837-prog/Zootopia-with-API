@@ -19,3 +19,20 @@ for item in animals_data:
   else:
     print()
   print()
+
+def read_animals_template (file_path):
+  with open(file_path, "r", encoding="utf-8") as file:
+    return file.read()
+
+animals_template = read_animals_template("animals_template.html")
+animals_string = ""
+for animal in animals_data:
+  animals_string += f"Name: {animal['name']}\n"
+  animals_string += f"Diet: {animal['characteristics']['diet']}\n"
+  animals_string += f"Location: {animal['locations'][0] if animal['locations'] else ' '}\n"
+  animals_string += f"Type:  {animal['characteristics']['type'] if 'type' in animal['characteristics'] else ''}\n"
+
+my_html = animals_template.replace("__REPLACE_ANIMALS_INFO__", animals_string)
+
+with open("animals.html", "w", encoding="utf-8") as file:
+  file.write(my_html)
