@@ -1,44 +1,68 @@
 import json
 
 def load_data(file_path):
-  """Loads a JSON file"""
+  """Loads a JSON file from given file path
+  and returns the parsed data."""
   with open(file_path, "r") as handle:
     return json.load(handle)
 
-animals_data = load_data('animals_data.json')
 
-for item in animals_data:
-  if "name" in item:
-    print("Name: ", item["name"])
-  if "characteristics" in item and "diet" in item["characteristics"]:
-    print("Diet: ", item["characteristics"]["diet"])
-  if "locations" in item and item["locations"] != []:
-    print("Location: ", item["locations"][0])
-  if "characteristics" in item and "type" in item["characteristics"]:
-    print("Type: ", item["characteristics"]["type"])
-  else:
+def print_animals(animals_data):
+  """Prints animal details such as name, diet, first location
+  and type if available."""
+  for item in animals_data:
+    if "name" in item:
+      print("Name: ", item["name"])
+    if "characteristics" in item and "diet" in item["characteristics"]:
+      print("Diet: ", item["characteristics"]["diet"])
+    if "locations" in item and item["locations"] != []:
+      print("Location: ", item["locations"][0])
+    if "characteristics" in item and "type" in item["characteristics"]:
+      print("Type: ", item["characteristics"]["type"])
+    else:
+      print()
     print()
-  print()
 
 def read_animals_template (file_path):
+  """Reads the HTML template file and
+  returns its content as a string."""
   with open(file_path, "r", encoding="utf-8") as file:
     return file.read()
 
-animals_template = read_animals_template("animals_template.html")
-animals_string = "" # define an empty string
-for animal in animals_data:
-  #append information to each string
-  animals_string += '<li class="cards__item">'
-  animals_string += f"Name: {animal['name']}<br/>\n"
-  animals_string += f"Diet: {animal['characteristics']['diet']}<br/>\n"
-  animals_string += f"Location: {animal['locations'][0] if animal['locations'] else ' '}<br/>\n"
 
-  if "type" in animal["characteristics"]:
-    animals_string += f"Type:  {animal['characteristics']['type'] if 'type' in animal['characteristics'] else ''}<br/>\n"
-  animals_string += '</li>'
-print(animals_string)
+def write_animals_html(animals_template, output):
+  """Replaces a placeholder in the HTML template
+  with formatted animal data and writes it to 'animals.html'."""
+  with open("animals.html", "w", encoding="utf-8") as file:
+    my_html = animals_template.replace("__REPLACE_ANIMALS_INFO__", output)
+    return file.write(my_html)
 
 
-my_html = animals_template.replace("__REPLACE_ANIMALS_INFO__", animals_string)
-with open("animals.html", "w", encoding="utf-8") as file:
-  file.write(my_html)
+def serialize_animal(animal_obj):
+  """Formats an animal object's details into an HTML list item string."""
+  output = "" # define an empty string
+  output += '<li class="cards__item">'
+  output += f'<div class="card__title"> {animal_obj['name']}</div><br/>'
+  output += f'<p class="card__text"> <strong> Diet: </strong> {animal_obj['characteristics']['diet']}</p>'
+  output += f'<p class="card__text"> <strong> Location: </strong>{animal_obj['locations'][0] if animal_obj['locations'] else ' '}</p>'
+
+  if "type" in animal_obj["characteristics"]:
+    output += f'<p class="card__text"> <strong> Type: </strong> {animal_obj['characteristics']['type'] if 'type' in animal_obj['characteristics'] else ''}</p>'
+  output += '</li>'
+  return output
+
+def main():
+  """Main function to load data, print it, format it as HTML, and write to a file."""
+  animals_data = load_data('animals_data.json')
+  animals_template = read_animals_template("animals_template.html")
+  print_animals(animals_data)
+
+  output = ""
+  for animal_obj in animals_data:
+    output += serialize_animal(animal_obj)
+
+  write_animals_html(animals_template, output)
+
+if __name__ == "__main__":
+  main()
+
