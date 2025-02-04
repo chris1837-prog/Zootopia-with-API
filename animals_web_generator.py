@@ -25,14 +25,20 @@ def read_animals_template (file_path):
     return file.read()
 
 animals_template = read_animals_template("animals_template.html")
-animals_string = ""
+animals_string = "" # define an empty string
 for animal in animals_data:
-  animals_string += f"Name: {animal['name']}\n"
-  animals_string += f"Diet: {animal['characteristics']['diet']}\n"
-  animals_string += f"Location: {animal['locations'][0] if animal['locations'] else ' '}\n"
-  animals_string += f"Type:  {animal['characteristics']['type'] if 'type' in animal['characteristics'] else ''}\n"
+  #append information to each string
+  animals_string += '<li class="cards__item">'
+  animals_string += f"Name: {animal['name']}<br/>\n"
+  animals_string += f"Diet: {animal['characteristics']['diet']}<br/>\n"
+  animals_string += f"Location: {animal['locations'][0] if animal['locations'] else ' '}<br/>\n"
+
+  if "type" in animal["characteristics"]:
+    animals_string += f"Type:  {animal['characteristics']['type'] if 'type' in animal['characteristics'] else ''}<br/>\n"
+  animals_string += '</li>'
+print(animals_string)
+
 
 my_html = animals_template.replace("__REPLACE_ANIMALS_INFO__", animals_string)
-
 with open("animals.html", "w", encoding="utf-8") as file:
   file.write(my_html)
