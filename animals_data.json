@@ -1,335 +1,163 @@
 [
     {
-        "name": "Howler Monkey",
+        "name": "Guinea Pig",
         "taxonomy": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
             "class": "Mammalia",
-            "order": "Primates",
-            "family": "Atelidae",
-            "genus": "Alouatta",
-            "scientific_name": "Alouatta"
+            "order": "Rodentia",
+            "family": "Caviidae",
+            "genus": "Cavia",
+            "scientific_name": "Cavia porcellus"
         },
         "locations": [
-            "Central-America",
             "South-America"
         ],
         "characteristics": {
-            "main_prey": "Fruit, Nuts, Seeds",
-            "habitat": "Rainforest and dense jungle",
-            "predators": "Jaguar, Snakes, Birds",
-            "diet": "Omnivore",
-            "average_litter_size": "1",
-            "lifestyle": "Troop",
-            "favorite_food": "Fruit",
-            "type": "Mammal",
-            "slogan": "Spends 80% of it's time resting!",
-            "color": "BrownBlackTan",
-            "skin_type": "Hair",
-            "top_speed": "18 mph",
-            "lifespan": "15-20 years",
-            "weight": "3-9kg (6.6-20lbs)"
+            "prey": "Grass, Seeds, Flowers",
+            "name_of_young": "Pup",
+            "group_behavior": "Herd",
+            "estimated_population_size": "Unknown",
+            "biggest_threat": "Habitat loss and hunting",
+            "most_distinctive_feature": "Four large front teeth",
+            "other_name(s)": "Cavy, Little Pig",
+            "gestation_period": "58 - 72 days",
+            "habitat": "Grassland and mountain slopes",
+            "diet": "Herbivore",
+            "average_litter_size": "4",
+            "lifestyle": "Diurnal",
+            "common_name": "Guinea Pig",
+            "number_of_species": "5",
+            "location": "South America",
+            "slogan": "Natively found in the Andes Mountain range!",
+            "group": "Mammal",
+            "color": "BrownGreyBlackWhiteOrange",
+            "skin_type": "Fur",
+            "top_speed": "5.5 mph",
+            "lifespan": "3 - 8 years",
+            "weight": "0.5kg - 1.5kg (1lbs - 3.5lbs)",
+            "length": "20cm - 40cm (8in - 16in)",
+            "age_of_sexual_maturity": "3 months",
+            "age_of_weaning": "3 weeks"
         }
     },
     {
-        "name": "Monkey",
+        "name": "Nicobar pigeon",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Columbiformes",
+            "family": "Columbidae",
+            "genus": "Caloenas",
+            "scientific_name": "Caloenas nicobarica"
+        },
+        "locations": [
+            "Asia",
+            "Oceania"
+        ],
+        "characteristics": {
+            "prey": "Invertebrates",
+            "estimated_population_size": "The population of is unknown, but it is decreasing and the bird\u2019s conservation status is near threatened. There are about 1000 individuals on Palau as of 2021.",
+            "biggest_threat": "Habitat destruction, hunting, collection for the illegal pet trade",
+            "most_distinctive_feature": "The colors of its long, iridescent feathers",
+            "other_name(s)": "Hackled pigeon, vulturine pigeon or white-tailed pigeon",
+            "wingspan": "21 to 23 inches",
+            "incubation_period": "2.5 weeks",
+            "litter_size": "1",
+            "habitat": "Lowland forests and mangrove forests",
+            "predators": "Humans, cats, rats",
+            "diet": "Omnivore",
+            "type": "Bird",
+            "common_name": "Nicobar Pigeon",
+            "number_of_species": "1",
+            "location": "Andaman and Nicobar Islands, Solomon Islands, Palau, islands in the Malay Archipelago",
+            "average_clutch_size": "1",
+            "nesting_location": "A tree",
+            "age_of_molting": "10 days",
+            "color": "GreyBlueWhiteGreenGolden",
+            "skin_type": "Feathers",
+            "top_speed": "93 mph",
+            "lifespan": "8 to 12 years in the wild, and 10 to 15 years in captivity",
+            "weight": "16.22 to 21.16 ounces",
+            "length": "15.7 inches, males larger than females"
+        }
+    },
+    {
+        "name": "Pig",
         "taxonomy": {
             "kingdom": "Animalia",
             "phylum": "Chordata",
             "class": "Mammalia",
-            "order": "Primates",
-            "family": "Cebidae",
-            "scientific_name": "Macaca Fascicularis"
+            "order": "Artiodactyla",
+            "family": "Suidae",
+            "genus": "Sus",
+            "scientific_name": "Sus scrofa scrofa"
+        },
+        "locations": [
+            "Asia",
+            "Eurasia",
+            "Europe",
+            "North-America"
+        ],
+        "characteristics": {
+            "main_prey": "Roots, Seeds, Leaves",
+            "habitat": "Forests and grassland",
+            "diet": "Omnivore",
+            "average_litter_size": "7",
+            "lifestyle": "Herd",
+            "favorite_food": "Roots",
+            "type": "Mammal",
+            "slogan": "Thought to have been domesticated in 9,000 BC!",
+            "color": "BrownGreyBlackWhitePink",
+            "skin_type": "Hair",
+            "top_speed": "11 mph",
+            "lifespan": "8-15 years",
+            "weight": "30-350kg (66-770lbs)"
+        }
+    },
+    {
+        "name": "Pigeon",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Columbiformes",
+            "family": "Columbidae"
         },
         "locations": [
             "Africa",
             "Asia",
             "Central-America",
+            "Eurasia",
+            "Europe",
+            "North-America",
             "Oceania",
             "South-America"
         ],
         "characteristics": {
-            "main_prey": "Fruit, Seeds, Insects",
-            "habitat": "Tropical forests, grasslands and mountainous plains",
-            "predators": "Birds, Snakes, Wildcats",
+            "prey": "Grain, seeds, berries, fruits, and occasionally insects, snails, earthworms.",
+            "estimated_population_size": "400 million worldwide",
+            "biggest_threat": "Inference from humans either in the form of pest control or urbanization",
+            "most_distinctive_feature": "White rump and metallic purple/ green iridescence on males",
+            "other_name(s)": "common pigeon, rock dove",
+            "wingspan": "19.7-26.4 inches",
+            "incubation_period": "14-19 days",
+            "habitat": "Often found in towns and cities, as well as farmlands, fields, and rocky cliffs",
             "diet": "Omnivore",
-            "average_litter_size": "1",
-            "lifestyle": "Troop",
-            "favorite_food": "Fruit",
-            "type": "Mammal",
-            "slogan": "There are around 260 known species!",
-            "color": "BrownGreyYellowBlackWhiteTan",
-            "skin_type": "Hair",
-            "top_speed": "35 mph",
-            "lifespan": "10-30 years",
-            "weight": "0.1-30kg (0.22-60lbs)"
-        }
-    },
-    {
-        "name": "Patas Monkey",
-        "taxonomy": {
-            "kingdom": "Animalia",
-            "phylum": "Chordata",
-            "class": "Mammalia",
-            "order": "Primates",
-            "family": "Cercopithecidae",
-            "genus": "Erythrocebus",
-            "scientific_name": "Erythrocebus patas"
-        },
-        "locations": [
-            "Africa"
-        ],
-        "characteristics": {
-            "prey": "Fruit, Insects, Eggs",
-            "name_of_young": "Infant",
-            "group_behavior": "Troop",
-            "estimated_population_size": "Decreasing",
-            "biggest_threat": "Hunting and capture",
-            "most_distinctive_feature": "Red back and white moustache and beard",
-            "other_name(s)": "Military Monkey, Hussar Monkey, Red Guenon",
-            "gestation_period": "5 months",
-            "habitat": "Savanna and open woodland",
-            "predators": "Leopard, Hyena, Lion",
-            "diet": "Omnivore",
-            "average_litter_size": "1",
-            "lifestyle": "Diurnal",
-            "common_name": "Patas Monkey",
-            "number_of_species": "1",
-            "location": "Central Africa",
-            "slogan": "The fastest species of primate in the world!",
-            "group": "Mammal",
-            "color": "BrownGreyRedBlackWhite",
-            "skin_type": "Hair",
-            "top_speed": "35 mph",
-            "lifespan": "12 - 20 years",
-            "weight": "4kg - 13kg (8.8lbs - 28.6lbs)",
-            "height": "45cm - 85cm (18in - 33in)",
-            "age_of_sexual_maturity": "3 - 5 years",
-            "age_of_weaning": "6 months"
-        }
-    },
-    {
-        "name": "Proboscis Monkey",
-        "taxonomy": {
-            "kingdom": "Animalia",
-            "phylum": "Chordata",
-            "class": "Mammalia",
-            "order": "Primates",
-            "family": "Cercopithecidae",
-            "genus": "Nasalis",
-            "scientific_name": "Nasalis larvatus"
-        },
-        "locations": [
-            "Asia"
-        ],
-        "characteristics": {
-            "prey": "Leaves, Shoots, Fruits",
-            "name_of_young": "Infant",
-            "group_behavior": "Troop",
-            "estimated_population_size": "7,000",
-            "biggest_threat": "Habitat loss",
-            "most_distinctive_feature": "Long, fleshy nose and swollen stomach",
-            "other_name(s)": "Long-Nosed Monkey",
-            "gestation_period": "166 days",
-            "habitat": "Coastal mangroves and riverine forests",
-            "predators": "Clouded Leopard, Crocodile, Human",
-            "diet": "Omnivore",
-            "average_litter_size": "1",
-            "lifestyle": "Diurnal",
-            "common_name": "Proboscis Monkey",
-            "number_of_species": "2",
-            "location": "Borneo",
-            "slogan": "Natively found on the island of Borneo!",
-            "group": "Mammal",
-            "color": "BrownGreyRedWhiteTanOrange",
-            "skin_type": "Fur",
-            "top_speed": "15 mph",
-            "lifespan": "15 - 20 years",
-            "weight": "7kg - 22kg (15lbs - 48lbs)",
-            "height": "53cm - 76cm (21in - 30in)",
-            "age_of_sexual_maturity": "4 - 5 years",
-            "age_of_weaning": "7 months"
-        }
-    },
-    {
-        "name": "Pygmy Marmoset (Finger Monkey)",
-        "taxonomy": {
-            "kingdom": "Animalia",
-            "phylum": "Chordata",
-            "class": "Mammalia",
-            "order": "Primates",
-            "family": "Callitrichidae",
-            "genus": "Cebuella",
-            "scientific_name": "Callithrix pygmaea"
-        },
-        "locations": [
-            "South-America"
-        ],
-        "characteristics": {
-            "main_prey": "Tree Sap, Fruit, Spiders, Insects",
-            "habitat": "Outskirts of tropical rainforest",
-            "predators": "Birds, Snakes, Wildcats",
-            "diet": "Omnivore",
-            "average_litter_size": "2",
-            "lifestyle": "Troop",
-            "favorite_food": "Tree Sap",
-            "type": "Mammal",
-            "slogan": "The smallest species of monkey in the world!",
-            "color": "BrownGreyBlackWhiteTan",
-            "skin_type": "Fur",
-            "top_speed": "24 mph",
-            "lifespan": "8-12 years",
-            "weight": "120-140g (4.2-4.9oz)"
-        }
-    },
-    {
-        "name": "Spider Monkey",
-        "taxonomy": {
-            "kingdom": "Animalia",
-            "phylum": "Chordata",
-            "class": "Mammalia",
-            "order": "Primates",
-            "family": "Atelidae",
-            "genus": "Ateles",
-            "scientific_name": "Simia Paniscus"
-        },
-        "locations": [
-            "Central-America",
-            "South-America"
-        ],
-        "characteristics": {
-            "main_prey": "Fruit, Nuts, Leaves",
-            "habitat": "Tropical jungle and rainforest",
-            "predators": "Human, Eagles, Jaguar",
-            "diet": "Omnivore",
-            "average_litter_size": "1",
-            "lifestyle": "Troop",
-            "favorite_food": "Fruit",
-            "type": "Mammal",
-            "slogan": "Found in the tropical jungles of South America!",
-            "color": "BrownGreyBlackWhite",
-            "skin_type": "Hair",
-            "top_speed": "35 mph",
-            "lifespan": "15-27 years",
-            "weight": "6.4-12kg (14-26lbs)"
-        }
-    },
-    {
-        "name": "Squirrel Monkey",
-        "taxonomy": {
-            "kingdom": "Animalia",
-            "phylum": "Chordata",
-            "class": "Mammalia",
-            "order": "Primates",
-            "family": "Cebidae",
-            "genus": "Saimiri",
-            "scientific_name": "Saimiri"
-        },
-        "locations": [
-            "Central-America",
-            "South-America"
-        ],
-        "characteristics": {
-            "prey": "Fruit, Insects, Flowers",
-            "name_of_young": "Infant",
-            "group_behavior": "Troop",
-            "estimated_population_size": "Not Known",
-            "biggest_threat": "Habitat loss",
-            "most_distinctive_feature": "Longer tail than body used for balance",
-            "other_name(s)": "Deaths Head Monkey",
-            "gestation_period": "170 days",
-            "habitat": "Dense, tropical jungle close to a stream",
-            "predators": "Birds of Prey, Snakes, Humans",
-            "diet": "Omnivore",
-            "average_litter_size": "1",
-            "lifestyle": "Diurnal",
-            "common_name": "Squirrel Monkey",
-            "number_of_species": "5",
-            "location": "Central and South America",
-            "slogan": "Lives in groups of up to 500 individuals!",
-            "group": "Mammal",
-            "color": "GreyYellowBlackOlive",
-            "skin_type": "Fur",
-            "top_speed": "22 mph",
-            "lifespan": "15 - 20 years",
-            "weight": "0.75kg -1.1k g (1.7lbs - 2.4lbs)",
-            "height": "25cm - 36cm (9.8in - 14in)",
-            "age_of_sexual_maturity": "3 - 5 years",
-            "age_of_weaning": "4 months"
-        }
-    },
-    {
-        "name": "Vervet Monkey",
-        "taxonomy": {
-            "kingdom": "Animalia",
-            "phylum": "Chordata",
-            "class": "Mammalia",
-            "order": "Primates",
-            "family": "Cercopithecidae",
-            "genus": "Chlorocebus",
-            "scientific_name": "Chlorocebus pygerythrus"
-        },
-        "locations": [
-            "Africa"
-        ],
-        "characteristics": {
-            "prey": "Leaves, Fruits, Insects",
-            "name_of_young": "Infant",
-            "group_behavior": "Troop",
-            "estimated_population_size": "Sustainable",
-            "biggest_threat": "Habitat loss",
-            "most_distinctive_feature": "Black face with white ear tufts",
-            "other_name(s)": "Vervet",
-            "gestation_period": "163 days",
-            "habitat": "Riverine acacia forests",
-            "predators": "Leopard, Serval, Crocodile",
-            "diet": "Omnivore",
-            "average_litter_size": "1",
-            "lifestyle": "Diurnal",
-            "common_name": "Vervet Monkey",
-            "number_of_species": "6",
-            "location": "Eastern Africa",
-            "slogan": "Rarely found more than 450m from trees!",
-            "group": "Mammal",
-            "color": "BrownGreyBlackSilverOlive",
-            "skin_type": "Fur",
-            "top_speed": "30 mph",
-            "lifespan": "12 - 24 years",
-            "weight": "3.5kg - 5kg (7lbs - 10lbs)",
-            "length": "46cm - 66cm (17.9in - 25.7in)",
-            "age_of_sexual_maturity": "2 - 5 years",
-            "age_of_weaning": "8 - 12 months"
-        }
-    },
-    {
-        "name": "Woolly Monkey",
-        "taxonomy": {
-            "kingdom": "Animalia",
-            "phylum": "Chordata",
-            "class": "Mammalia",
-            "order": "Primates",
-            "family": "Atelidae",
-            "genus": "Lagothrix",
-            "scientific_name": "Lagothrix Lagotricha"
-        },
-        "locations": [
-            "South-America"
-        ],
-        "characteristics": {
-            "main_prey": "Fruit, Seeds, Insects",
-            "habitat": "Humid and mature tropical forests",
-            "predators": "Human, Wildcats, Birds of Prey",
-            "diet": "Omnivore",
-            "average_litter_size": "1",
-            "lifestyle": "Troop",
-            "favorite_food": "Fruit",
-            "type": "Mammal",
-            "slogan": "Has a long, strong prehensile tail!",
-            "color": "BrownGreyBlack",
-            "skin_type": "Fur",
-            "top_speed": "35 mph",
-            "lifespan": "7-10 years",
-            "weight": "5-8kg (11-18lbs)"
+            "type": "Bird",
+            "common_name": "Pigeon, dove",
+            "number_of_species": "250",
+            "location": "All continents except Antarctica",
+            "nesting_location": "Buildings or rocky cliffs",
+            "age_of_molting": "12-19 days",
+            "color": "BrownGreyWhite",
+            "skin_type": "Feathers",
+            "top_speed": "95 mph",
+            "lifespan": "6 years",
+            "weight": "9.3-13.4 oz",
+            "height": "25-35 centimeters",
+            "length": "11.8-14.2 inches"
         }
     }
 ]

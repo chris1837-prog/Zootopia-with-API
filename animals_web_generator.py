@@ -1,5 +1,5 @@
 import json
-import requests
+import data_fetcher
 
 def load_data(file_path):
   """Loads a JSON file from given file path
@@ -20,8 +20,6 @@ def print_animals(animals_data):
       print("Location: ", item["locations"][0])
     if "characteristics" in item and "type" in item["characteristics"]:
       print("Type: ", item["characteristics"]["type"])
-    else:
-      print()
     print()
 
 def read_animals_template (file_path):
@@ -39,8 +37,8 @@ def write_animals_html(animals_template, output, user_input):
       my_html = animals_template.replace("__REPLACE_ANIMALS_INFO__", output)
     else:
       my_html = animals_template.replace("__REPLACE_ANIMALS_INFO__",
-                                         f'<h2>The animal "{user_input}" doesn\'t exist.</h2>')
-    return file.write(my_html)
+                                         f"<h2>The animal '{user_input}' doesn't exist.</h2>")
+    file.write(my_html)
 
 
 def serialize_animal(animal_obj):
@@ -58,25 +56,8 @@ def serialize_animal(animal_obj):
 
 def main():
   user_input = input("Enter a name of an animal: ")
-  api_url = f'https://api.api-ninjas.com/v1/animals?name={user_input}'
-  response = requests.get(api_url, headers={'X-Api-Key': 'EAtgdsUVitcqpX3n18bJ5A==puIXjoF4t4EqYkyU'})
-
-  if response.status_code == 200:
-    data = response.json()
-    with open("animals_data.json", "w") as file:
-      json.dump(data, file, indent=4)
-
-    animals_template = read_animals_template("animals_template.html")
-
-    if not data:
-      output = f"<h2>The animal '{user_input}' doesn't exist.</h2>"
-      print(f"Error: The animal '{user_input}' cannot be found on the website.")
-    else:
-      output = "".join(serialize_animal(animal) for animal in data)
-      print("Website was successfully generated to the file animals.html.")
-    write_animals_html(animals_template, output, user_input)
-  else:
-    print(f"Error: API request failed with status code {response.status_code}")
+  data = data_fetcher.fetch_data(user_input)
+  print_animals(data)
 
 if __name__ == "__main__":
   main()
