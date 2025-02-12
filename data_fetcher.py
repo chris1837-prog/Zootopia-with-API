@@ -28,6 +28,7 @@ def fetch_data(animal_name):
       # convert data to html
       output = "".join(serialize_animal(animal) for animal in data)
       print("Website was successfully generated to the file animals.html.")
+
     write_animals_html(animals_template, output, animal_name)
   else:
     # if response.status_code != 200

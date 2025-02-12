@@ -42,7 +42,7 @@ def write_animals_html(animals_template, output, user_input):
 
 
 def serialize_animal(animal_obj):
-  """Formats an animal object's details into an HTML list item string."""
+  """Formats an animal object's details into an HTML-list-item-string."""
   output = "" # define an empty string
   output += '<li class="cards__item">'
   output += f'<div class="card__title"> {animal_obj["name"]}</div><br/>'
@@ -55,6 +55,9 @@ def serialize_animal(animal_obj):
   return output
 
 def main():
+  """Main function of the program, takes user input for an animal name.
+  Fetches data using the fetch_data function, prints animal details using print_animals.
+  """
   user_input = input("Enter a name of an animal: ")
   data = data_fetcher.fetch_data(user_input)
   print_animals(data)
