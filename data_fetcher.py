@@ -2,7 +2,7 @@ import requests
 import json
 from animals_web_generator import read_animals_template, write_animals_html, serialize_animal
 
-API_KEY = 'EAtgdsUVitcqpX3n18bJ5A==puIXjoF4t4EqYkyU'
+API_KEY='EAtgdsUVitcqpX3n18bJ5A==puIXjoF4t4EqYkyU'
 
 def fetch_data(animal_name):
   """
