@@ -1,8 +1,10 @@
 import requests
+import os
 import json
 from animals_web_generator import read_animals_template, write_animals_html, serialize_animal
 
-API_KEY='EAtgdsUVitcqpX3n18bJ5A==puIXjoF4t4EqYkyU'
+api_key = os.getenv("API_KEY")
+
 
 def fetch_data(animal_name):
   """
@@ -10,7 +12,7 @@ def fetch_data(animal_name):
   Returns: a list of animals, each animal is a dictionary.
   """
   api_url = f'https://api.api-ninjas.com/v1/animals?name={animal_name}'
-  response = requests.get(api_url, headers={'X-Api-Key': API_KEY})
+  response = requests.get(api_url, headers={'X-Api-Key': api_key})
 
   if response.status_code == 200:
     data = response.json()
